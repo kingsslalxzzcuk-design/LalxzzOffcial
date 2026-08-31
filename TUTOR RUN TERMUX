@@ -1,0 +1,29 @@
+1. Install Git
+pkg update && pkg upgrade
+pkg install git
+2. akses project
+termux-setup-storage
+3. Setup identitas Git
+git config --global user.name "NamaKamu"
+git config --global user.email "emailkamu@gmail.com"
+4. Masuk ke folder project ⚠️ folder bukan zip
+cd nama-folder-project
+5. Buat .gitignore
+echo "node_modules/" >> .gitignore
+echo "auth_info_baileys/" >> .gitignore
+echo "session/" >> .gitignore
+echo ".env" >> .gitignore
+6. Inisialisasi repo 
+git init
+7. Add all file
+git add .
+8. Commit file
+git commit -m "first commit"
+9. Ganti branch ke main
+git branch -M main
+10. Hubungkan ke repo GitHub
+git remote add origin https://github.com/username/nama-repo.git
+11. Upload ke github
+git push -u origin main
+
+// dowload termux di F droid
